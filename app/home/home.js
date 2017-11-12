@@ -15,8 +15,9 @@
     .controller('HomeCtrl', HomeCtrl);
 
 
-  function HomeCtrl($scope, $log, Services) {
+  function HomeCtrl($scope, $log, Services, $location) {
     var vm = this;
+    vm.goto = goto;
 
     Services.getContent().then(function (response) {
       vm.content = response;
@@ -26,6 +27,11 @@
       e.preventDefault();
       $(this).tab('show');
     });
+
+    
+    function goto(id) {
+      $location.path('/news/' + id);
+    }
   }
 
 })();
