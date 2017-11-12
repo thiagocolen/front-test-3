@@ -1,41 +1,63 @@
-<div class="row">
-  <div class="col-md-12 text-center">
-    <img src="http://via.placeholder.com/860x520" alt="image" class="img-thumbnail">
+<div class="home-view">
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <img src="http://via.placeholder.com/860x520" alt="image" class="img-thumbnail">
+    </div>
   </div>
-</div>
-<div class="row">
-  <ul class="nav nav-tabs nav-justified" role="tablist" id="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="home-tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-  </ul>
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="http://via.placeholder.com/320x210" alt="image" class="img-thumbnail">
-        </div>
-        <div class="col-md-4">
-          <img src="http://via.placeholder.com/320x210" alt="image" class="img-thumbnail">
-        </div>
-        <div class="col-md-4">
-          <img src="http://via.placeholder.com/320x210" alt="image" class="img-thumbnail">
+  <div class="row">
+    <ul class="nav nav-tabs nav-justified" role="tablist" id="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="home-tab">Home</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="row">
+          <div class="col-md-4">
+
+
+            <h1>{{ vm.title }}</h1>
+            <h1>{{ vm.content }}</h1>
+
+            <div class="panel panel-default text-center">
+              <div class="panel-heading">
+                <img src="http://via.placeholder.com/320x210" alt="image" class="img-responsive">
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea molestiae porro blanditiis impedit
+                  adipisci doloremque cumque eligendi odio ad, earum hic quidem accusamus eveniet dolores unde debitis facilis
+                  deleniti.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary">Default</button>
+            </div>
+
+
+          </div>
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/320x210" alt="image" class="img-thumbnail">
+          </div>
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/320x210" alt="image" class="img-thumbnail">
+          </div>
         </div>
       </div>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="profile">
-      profile
-    </div>
-    <div role="tabpanel" class="tab-pane" id="messages">
-      messages
+      <div role="tabpanel" class="tab-pane" id="profile">
+        profile
+      </div>
+      <div role="tabpanel" class="tab-pane" id="messages">
+        messages
+      </div>
     </div>
   </div>
-</div>
-<script>
-  $(function () {
-    $('#tablist a').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
+  <script>
+    $(function () {
+      $('#tablist a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      });
     });
-  });
-</script>
+  </script>
+
+</div>
