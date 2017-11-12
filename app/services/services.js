@@ -1,4 +1,3 @@
-
 (function () {
   'use strict';
 
@@ -19,7 +18,6 @@
     function getContent() {
       return $http.get('https://api.myjson.com/bins/a56hd')
         .then(function (response) {
-          console.log(response.data);
           return response.data;
         })
         .catch(function (err) {
