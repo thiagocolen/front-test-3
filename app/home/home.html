@@ -14,16 +14,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="http://via.placeholder.com/860x520" alt="image" class="img-responsive center-block">
-            <div class="carousel-caption">img1</div>
+            <img src="images/PhotoFunia-1510503596.jpg" alt="image" class="img-responsive center-block">
           </div>
           <div class="item">
-            <img src="http://via.placeholder.com/860x520" alt="image" class="img-responsive center-block">
-            <div class="carousel-caption">img2</div>
+            <img src="images/PhotoFunia-1510503913.jpg" alt="image" class="img-responsive center-block">
           </div>
           <div class="item">
-            <img src="http://via.placeholder.com/860x520" alt="image" class="img-responsive center-block">
-            <div class="carousel-caption">img3</div>
+            <img src="images/PhotoFunia-1510505251.jpg" alt="image" class="img-responsive center-block">
           </div>
         </div>
       </div>
@@ -31,13 +28,13 @@
     </div>
   </div>
   <div class="row">
-    <ul class="nav nav-tabs nav-justified" role="tablist" id="tablist">
-      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" id="home-tab">Home</a></li>
-      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <ul class="nav nav-tabs" role="tablist" id="tablist">
+      <li role="presentation" class="active"><a href="#lorem" aria-controls="lorem" role="tab" data-toggle="tab" id="lorem-tab">lorem</a></li>
+      <li role="presentation"><a href="#ipsum" aria-controls="ipsum" role="tab" data-toggle="tab">ipsum</a></li>
+      <li role="presentation"><a href="#dolor" aria-controls="dolor" role="tab" data-toggle="tab">dolor</a></li>
     </ul>
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="home">
+      <div role="tabpanel" class="tab-pane active" id="lorem">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="article in vm.content">
             <div class="panel panel-default text-center">
@@ -46,49 +43,53 @@
               </div>
               <div class="panel-body">
                 <p>{{ article.txt_resume }}</p>
+                <button type="button" class="btn btn-primary" ng-click="vm.goto(article.id)">{{ article.txt_button }}</button>
               </div>
-              <button type="button" class="btn btn-primary" ng-click="vm.goto(article.id)">{{ article.txt_button }}</button>
             </div>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane" id="profile">
+      <div role="tabpanel" class="tab-pane" id="ipsum">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default table-responsive">
-              <table class="table table-striped">
+              <table class="table table-striped text-center">
                 <tr>
-                  <th>1</th>
-                  <th>2</th>
-                  <th>3</th>
+                  <th class="text-center">STRING</th>
+                  <th class="text-center">INTEGER</th>
+                  <th class="text-center">BOOLEAN</th>
                 </tr>
                 <tr>
+                  <td>"text 1"</td>
                   <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
+                  <td>false</td>
                 </tr>
                 <tr>
+                  <td>"text 1"</td>
                   <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
+                  <td>false</td>
                 </tr>
                 <tr>
+                  <td>"text 1"</td>
                   <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
+                  <td>false</td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane" id="messages">
+      <div role="tabpanel" class="tab-pane" id="dolor">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi suscipit maiores, perferendis aliquid praesentium illo voluptatibus tempore. Maiores officia perspiciatis, qui omnis vitae, harum voluptatum eveniet doloremque obcaecati est unde.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi suscipit maiores, perferendis aliquid praesentium
+              illo voluptatibus tempore. Maiores officia perspiciatis, qui omnis vitae, harum voluptatum eveniet doloremque
+              obcaecati est unde.</p>
           </div>
           <div class="col-xs-12 col-sm-6">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi suscipit maiores, perferendis aliquid praesentium illo voluptatibus tempore. Maiores officia perspiciatis, qui omnis vitae, harum voluptatum eveniet doloremque obcaecati est unde.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi suscipit maiores, perferendis aliquid praesentium
+              illo voluptatibus tempore. Maiores officia perspiciatis, qui omnis vitae, harum voluptatum eveniet doloremque
+              obcaecati est unde.</p>
           </div>
         </div>
       </div>

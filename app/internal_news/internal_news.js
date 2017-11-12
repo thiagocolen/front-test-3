@@ -18,10 +18,9 @@
   function internalNewsCtrl($scope, $log, $routeParams, Services) {
     var vm = this;
 
-    console.log($routeParams.newsId);
-
+    
     Services.getContent().then(function (response) {
-      vm.content = response[$routeParams.newsId];
+      vm.content = response[$routeParams.newsId-1];
     });
 
     $('#tablist a').click(function (e) {

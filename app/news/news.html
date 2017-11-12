@@ -1,0 +1,28 @@
+<div class="news-view">
+
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <select id="disabledSelect" class="form-control" ng-model="vm.activefilter" ng-change="vm.loadNews()">
+            <option ng-repeat="option in vm.filterOptions" value="{{option}}">{{option}}</option>
+          </select>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="article in vm.content">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <img src="http://via.placeholder.com/320x210" alt="image" class="img-responsive">
+        </div>
+        <div class="panel-body">
+          <small>id:{{article.id}}</small>
+          <p>{{ article.txt_resume }}</p>
+          <button type="button" class="btn btn-primary" ng-click="vm.goto(article.id)">{{ article.txt_button }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
