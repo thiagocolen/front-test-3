@@ -24,7 +24,6 @@
     vm.loadNews();
 
     function loadNews () {
-      console.log('loadNews');
       Services.getContent().then(function (response) {
         vm.content = [];
   

@@ -9,8 +9,6 @@
 
   function Services($http) {
 
-    console.log('Services');
-
     return {
       getContent: getContent
     };

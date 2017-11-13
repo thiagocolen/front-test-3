@@ -1,26 +1,7 @@
 /* app css stylesheet */
 
 body {
-  font-family: 'Arvo', sans-serif;
-}
-
-.forster-family {
   font-family: 'Open Sans', sans-serif;
-}
-
-.japonese-cubes-background {
-  background-color: #556;
-  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-}
-
-.dark-crazy-pattern {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAT0lEQVQoU43PwQ3AMAgDQDOT9x+BmVKB6spJeYQXMhcFAsCCFUlkpkfdh8NCqhN/UKiA93rYcBqcWZDsHae9HDeckL4U3o75nfoGha9g+QfdDyQzE3KQ/gAAAABJRU5ErkJggg==);
-}
-
-.light-crazy-pattern {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAVklEQVQoU2N88eLFfwYo+Pz5M8O7d+8Y5OXlYUJwmhGmEKZISEgIq2KwQnSTsJnMePv27f/YrENXzHjy5Mn/2NwEchyyYrgbMVyP5kGCCmEmE6UQpBgAuCdQPbwKm8EAAAAASUVORK5CYII=);
 }
 
 
